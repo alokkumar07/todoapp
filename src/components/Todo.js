@@ -15,7 +15,7 @@ const Todo = () => {
           return (
             <>
               <div
-                className="todo_container d-flex justify-content-between align-items-center px-2"
+                className="todo_container mb-2 d-flex justify-content-between align-items-center px-2"
                 key={k}
                 style={{
                   background: "#dcdde1",
