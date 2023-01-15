@@ -11,5 +11,7 @@ export const todoreducers =(state=Inital_State,action)=>{
                     User_data:[...state.User_data, action.payload ]
                     
                 }
+        default :
+         return state        
     } 
 }
