@@ -11,6 +11,14 @@ export const todoreducers =(state=Inital_State,action)=>{
                     User_data:[...state.User_data, action.payload ]
                     
                 }
+                case "RMV_DATA":
+
+                const dltdata = state.User_data.filter((ele, k) => k !== action.payload)
+    
+                return {
+                    ...state,
+                    User_data: dltdata
+                }
         default :
          return state        
     } 

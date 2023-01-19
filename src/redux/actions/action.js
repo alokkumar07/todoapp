@@ -4,3 +4,10 @@ export const Add =(iteams)=>{
         payload:iteams
     }
 }
+
+export const Remove =(id)=>{
+    return{
+        type:"RMV_DATA",
+        payload:id
+    } 
+}
