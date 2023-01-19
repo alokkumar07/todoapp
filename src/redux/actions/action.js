@@ -11,3 +11,12 @@ export const Remove =(id)=>{
         payload:id
     } 
 }
+
+export const Update_data =(iteams,id)=>{
+    return{
+        type:"UPDATE_DATA",
+        payload:iteams,
+        d : id
+
+    } 
+}

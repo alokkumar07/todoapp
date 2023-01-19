@@ -19,6 +19,13 @@ export const todoreducers =(state=Inital_State,action)=>{
                     ...state,
                     User_data: dltdata
                 }
+                case "UPDATE_DATA" : 
+                const updatedata = state.User_data.map((ele,k)=> k == action.d ? action.payload : ele)
+    
+                return {
+                    ...state,
+                    User_data: updatedata
+                }
         default :
          return state        
     } 
